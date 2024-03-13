@@ -6,8 +6,8 @@
 #include <DHTesp.h>
 #include <HTTPClient.h>
 
-const char* apiKey = "apikey"; // Obtain from Google Developers Console
-const char* channelId = "UCKdqemCGLUNIBGQhx7aFsWw";
+const char* apiKey = "YOUR_YOUTUBE_API_KEY"; // Obtain from Google Developers Console
+const char* channelId = "YOUR_YOUTUBE_CHANNEL_ID";
 
 // Replace these placeholders with your actual WiFi credentials
 const char* ssid = "YourWiFiSSID";

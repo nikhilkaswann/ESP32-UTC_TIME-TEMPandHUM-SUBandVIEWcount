@@ -22,6 +22,16 @@ This project uses an ESP32 microcontroller to create a simple dashboard that dis
 
 ## Configuration
 
+users should replace `"YourWiFiSSID"` and `"YourWiFiPassword"` with their own WiFi SSID and password.
+
+```cpp
+// Replace these placeholders with your actual WiFi credentials
+const char* ssid = "YourWiFiSSID";
+const char* password = "YourWiFiPassword";
+
+// Rest of your code...
+```
+
 Replace `"YOUR_YOUTUBE_API_KEY"` and `"YOUR_YOUTUBE_CHANNEL_ID"` in the code with your actual YouTube API key and channel ID.
 
 ```cpp

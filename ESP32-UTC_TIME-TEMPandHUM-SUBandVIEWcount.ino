@@ -24,14 +24,9 @@ int Timer2 = 0;
 int Timer3 = 0;
  
 #define NTP_SERVER     "pool.ntp.org"
-#define UTC_OFFSET     19800
+#define UTC_OFFSET     0
 #define UTC_OFFSET_DST 0
 
-//#define API_KEY "AIzaSyAtlXbhqDbD0Hl3QuoYkYvLo1mkxjSKQCM"
-//#define CHANNEL_ID "UCKdqemCGLUNIBGQhx7aFsWw"
-
-//WiFiClientSecure client;
-//YoutubeApi api(API_KEY, client);
 
 unsigned long api_mtbs = 1000; 
 unsigned long api_lasttime;
@@ -65,34 +60,6 @@ void printLocalTime() {
   lcd.setCursor(0, 1);
   lcd.println(&timeinfo, "%d/%m/%Y   %a");
 }
-/*
-void subcount() {
-
-  if (millis() - api_lasttime > api_mtbs)  {
-    if(api.getChannelStatistics(CHANNEL_ID))
-    {
-      subs_count = api.channelStats.subscriberCount ;
-      view_count = api.channelStats.viewCount ;
-      
-      Serial.println("---------Status---------");
-      Serial.println("Zeno_Modiff");
-      Serial.print("S: ");
-      Serial.println(subs_count);
-      lcd.clear();
-      lcd.setCursor(0,1);
-      lcd.print("S: ");
-      lcd.println( subs_count);
-      Serial.print("V: ");
-      Serial.println(view_count);
-      lcd.setCursor(0,2);
-      lcd.print("V: ");
-      lcd.println(view_count);
-      Serial.println("------------------------");
-    }
-    api_lasttime = millis();
-  }
-}
-*/
 
 void subcount() {
   // Make an HTTP request to the YouTube Data API

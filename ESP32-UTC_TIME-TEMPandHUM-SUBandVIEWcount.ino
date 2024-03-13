@@ -6,7 +6,7 @@
 #include <DHTesp.h>
 #include <HTTPClient.h>
 
-const char* apiKey = "AIzaSyAtlXbhqDbD0Hl3QuoYkYvLo1mkxjSKQCM"; // Obtain from Google Developers Console
+const char* apiKey = "apikey"; // Obtain from Google Developers Console
 const char* channelId = "UCKdqemCGLUNIBGQhx7aFsWw";
 
 // Replace these placeholders with your actual WiFi credentials

@@ -9,6 +9,10 @@
 const char* apiKey = "AIzaSyAtlXbhqDbD0Hl3QuoYkYvLo1mkxjSKQCM"; // Obtain from Google Developers Console
 const char* channelId = "UCKdqemCGLUNIBGQhx7aFsWw";
 
+// Replace these placeholders with your actual WiFi credentials
+const char* ssid = "YourWiFiSSID";
+const char* password = "YourWiFiPassword";
+
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 const int DHT_PIN = 15;
@@ -112,7 +116,7 @@ void setup(){
   lcd.print("Connecting to ");
   lcd.setCursor(0, 1);
   lcd.print("WiFi ");
-  WiFi.begin("TCMA", "nikhil90409");
+  WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(250);
     spinner();
